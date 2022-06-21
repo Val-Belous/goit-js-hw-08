@@ -15,12 +15,9 @@ function handlerSubmit(event) {
     alert('Всі поля повинні бути заповнені');
     return;
   }
-  const formData = new FormData(form);
-  formData.forEach(() => {
-    form.reset();
-    localStorage.clear();
-  });
 
+  form.reset();
+  localStorage.clear();
   console.log(inputs);
 }
 
